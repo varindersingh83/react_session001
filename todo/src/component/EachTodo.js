@@ -1,7 +1,11 @@
 import React from 'react';
 import Todo from './todo.js';
+import { useSelector } from 'react-redux';
 
 function EachTodo({ toDos, setTodos }) {
+  const todoRedux = useSelector((state) => state.todos.todo1);
+  console.log(todoRedux);
+
   return (
     <div>
       {/* 
